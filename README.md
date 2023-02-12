@@ -24,8 +24,8 @@ As you navigate this code base, it is great to note the following concepts, whil
 - ```models/engine``` directory will contain all storage classes (using the same prototype). For the moment I will have only one: ```file_storage.py```.
 
 The project's implementation will happen in the following phases:
-## Phase One
-The first phase is to manipulate a powerful storage system to give an abstraction between objects and how they are stored and persisted. To achieve this, I will:
+## First step: Write a command interpreter to manage your AirBnB objects.
+This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
 - put in place a parent class (called ```BaseModel```) to take care of the initialization, serialization and deserialization of my future instances
 - create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
 - create all classes used for AirBnB (```User, State, City, Place…```) that inherit from ```BaseModel```
